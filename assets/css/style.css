@@ -88,12 +88,30 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 0;
+    position: relative;
 }
 
 .input-box{
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
+}
+@keyframes seta{
+    from{
+        top: 10px;
+    }
+    to {
+        bottom: 100px;
+    }
+}
+.input-group::after{
+   content: "⇩";
+   position: absolute;
+   width: 40px;
+   top: 300px;
+   bottom: 200px;
+   right: 10px;
+   animation: seta 2s ease-in-out infinite;
 }
 
 .input-box  input{
