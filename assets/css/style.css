@@ -104,15 +104,6 @@ body{
         bottom: 100px;
     }
 }
-.input-group::after{
-   content: "⇩";
-   position: absolute;
-   width: 40px;
-   top: 300px;
-   bottom: 200px;
-   right: 10px;
-   animation: seta 2s ease-in-out infinite;
-}
 
 .input-box  input{
     margin: 10px 10px;
@@ -213,4 +204,14 @@ body{
     .gender-title{
         margin-top: 1rem;
     }   
+    .input-group::after{
+        content: "⇩";
+        position: absolute;
+        width: 40px;
+        top: 300px;
+        bottom: 200px;
+        right: 10px;
+        animation: seta 2s ease-in-out infinite;
+     }
+     
 }
